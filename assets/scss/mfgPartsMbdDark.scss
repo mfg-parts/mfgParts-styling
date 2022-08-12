@@ -1,0 +1,12 @@
+@import '../../node_modules/mdb-ui-kit/src/scss/mdb.pro.scss';
+
+$my-theme-primary: #4C97D2; // theme primary color, change this value to customize theme
+$my-theme-secondary: #C1D662; // theme secondary color, change this value to customize theme
+// $mdb-theme-dark-background: #5A6268;
+// $mdb-theme-dark-surface: #2B3036;
+// $dark: #2B3036;
+
+$my-dark-theme: mdb-dark-theme($my-theme-primary, $my-theme-secondary); // create the new dark theme using primary and secondary colors
+
+// include theme styles
+@include mdb-theme($my-dark-theme);
