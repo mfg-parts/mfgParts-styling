@@ -4,7 +4,12 @@ $warning: #DF9368;
 $danger: #ED2F4E;
 $dark: #131517;
 $secondary: #182026;
+$tertiary: #364755;
 
+// Add "tertiary" styles to the generated classes
+$theme-colors: (
+  "tertiary": $tertiary,
+);
 
 $border-radius:               .75rem;
 $border-radius-sm:            .5rem;
