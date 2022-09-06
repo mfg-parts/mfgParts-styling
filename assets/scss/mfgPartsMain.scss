@@ -51,6 +51,21 @@ $utilities: map-merge(
         auto: auto,
       ),
     ),
+    'height': (
+      property: height,
+      class: h,
+      responsive: true,
+      values: (
+        25: 25%,
+        33: 33%,
+        50: 50%,
+        66: 66%,
+        75: 75%,
+        99: 99%,
+        100: 100%,
+        auto: auto,
+      ),
+    ),
   )
 );
 @import "../../node_modules/bootstrap/scss/reboot";
