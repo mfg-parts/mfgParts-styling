@@ -5,7 +5,7 @@ $success: #BDED92;
 $warning: #FA8C53;
 $danger: #DC4730;
 $info: #A67AFB;
-$dark: #121314;
+$dark: #17181A;
 $secondary: #292A2B;
 
 $custom-colors: (
@@ -22,6 +22,9 @@ $custom-colors: (
 @import "../../node_modules/bootstrap/scss/variables";
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $input-focus-box-shadow: 0 0 0 0.25rem rgba(189,237,146,0.25);
+// $nav-tabs-link-active-color: $success;
+// $nav-tabs-link-active-bg: $dark;
+// $nav-tabs-link-active-border-color: $success;
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
