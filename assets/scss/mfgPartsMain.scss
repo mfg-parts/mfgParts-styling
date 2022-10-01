@@ -1,27 +1,34 @@
 @import '../../node_modules/bootstrap/scss/functions';
 
-$primary: #4376FA;
-$success: #BDED92;
-$warning: #FA8C53;
+$primary: #BDED92;
+$secondary: #4376FA;
+$success: #72CE93;
+$warning: #FFCD69;
 $danger: #DC4730;
 $info: #A67AFB;
 $dark: #17181A;
-$secondary: #292A2B;
+
+$alt-dark: #4E6672;
 
 $custom-colors: (
-    "tertiary": #414243,
+    "tertiary": #FA8C53,
     "dark-1": #292A2B,
     "dark-2": #414243,
     "dark-3": #59595A,
     "dark-4": #717172,
-    "dark-5": #888989
+    "dark-5": #888989,
+    "alt-dark": #4E6672,
 );
 
 
 // Required
 @import "../../node_modules/bootstrap/scss/variables";
 $theme-colors: map-merge($theme-colors, $custom-colors);
-$input-focus-box-shadow: 0 0 0 0.25rem rgba(189,237,146,0.25);
+$input-focus-box-shadow:      0 0 0 0.25rem rgba(189,237,146,0.25);
+$box-shadow:                  0 .5rem 1rem rgba($alt-dark, .15);
+$box-shadow-sm:               0 .125rem .25rem rgba($alt-dark, .075);
+$box-shadow-lg:               0 1rem 3rem rgba($alt-dark, .175);
+$box-shadow-inset:            inset 0 1px 2px rgba($alt-dark, .075);
 // $nav-tabs-link-active-color: $success;
 // $nav-tabs-link-active-bg: $dark;
 // $nav-tabs-link-active-border-color: $success;
