@@ -10,6 +10,20 @@ $dark: #17181A;
 
 $alt-dark: #4E6672;
 
+
+
+$grays: (
+  "100": #E7E7E7,
+  "200": #D0D0D0,
+  "300": #B7B8B8,
+  "400": #A0A1A1,
+  "500": #888989,
+  "600": #717172,
+  "700": #59595A,
+  "800": #414243,
+  "900": #292A2B
+);
+
 $custom-colors: (
     "tertiary": #FA8C53,
     "dark-1": #292A2B,
@@ -25,14 +39,15 @@ $custom-colors: (
 @import "../../node_modules/bootstrap/scss/variables";
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $input-focus-box-shadow:      0 0 0 0.25rem rgba(189,237,146,0.25);
-$box-shadow:                  0 .5rem 1rem rgba($alt-dark, .15);
-$box-shadow-sm:               0 .125rem .25rem rgba($alt-dark, .075);
-$box-shadow-lg:               0 1rem 3rem rgba($alt-dark, .175);
-$box-shadow-inset:            inset 0 1px 2px rgba($alt-dark, .075);
+// $box-shadow:                  0 .5rem 1rem rgba($alt-dark, .15);
+// $box-shadow-sm:               0 .125rem .25rem rgba($alt-dark, .075);
+// $box-shadow-lg:               0 1rem 3rem rgba($alt-dark, .175);
+// $box-shadow-inset:            inset 0 1px 2px rgba($alt-dark, .075);
 // $nav-tabs-link-active-color: $success;
 // $nav-tabs-link-active-bg: $dark;
 // $nav-tabs-link-active-border-color: $success;
 @import "../../node_modules/bootstrap/scss/maps";
+$body-color: $light;
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
 
