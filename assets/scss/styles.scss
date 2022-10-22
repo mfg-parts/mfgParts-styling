@@ -1,0 +1,26 @@
+
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/root";
+// @import "../../node_modules/bootstrap/scss/utilities";
+
+@include media-breakpoint-down(sm) {
+    .header-image-wrapper {
+        height: 150px;
+        width: 150px;
+      }
+}
+@include media-breakpoint-up(lg) {
+    .header-image-wrapper {
+        height: 200px;
+        width: 200px;
+      }
+}
+@include media-breakpoint-up(xl) {
+    .header-image-wrapper {
+        height: 250px;
+        width: 250px;
+      }
+}

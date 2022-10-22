@@ -1,0 +1,18 @@
+@media (max-width: 575.98px) {
+  .header-image-wrapper {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .header-image-wrapper {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-image-wrapper {
+    height: 250px;
+    width: 250px;
+  }
+}
