@@ -1,122 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>{{ prompt.screen.texts.pageTitle }}</title>
     <!-- Segment Analytics -->
     <script>
-      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="oCCRAYe7kCkq6tKGizTek3o3Trape5eh";;analytics.SNIPPET_VERSION="4.15.3";
-      analytics.load("oCCRAYe7kCkq6tKGizTek3o3Trape5eh");
-      analytics.page();
-      }}();
+      !(function () {
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error('Segment snippet included twice.');
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              'trackSubmit',
+              'trackClick',
+              'trackLink',
+              'trackForm',
+              'pageview',
+              'identify',
+              'reset',
+              'group',
+              'track',
+              'ready',
+              'alias',
+              'debug',
+              'page',
+              'once',
+              'off',
+              'on',
+              'addSourceMiddleware',
+              'addIntegrationMiddleware',
+              'setAnonymousId',
+              'addDestinationMiddleware',
+            ];
+            analytics.factory = function (e) {
+              return function () {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics;
+              };
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key);
+            }
+            analytics.load = function (key, e) {
+              var t = document.createElement('script');
+              t.type = 'text/javascript';
+              t.async = !0;
+              t.src =
+                'https://cdn.segment.com/analytics.js/v1/' +
+                key +
+                '/analytics.min.js';
+              var n = document.getElementsByTagName('script')[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e;
+            };
+            analytics._writeKey = 'oCCRAYe7kCkq6tKGizTek3o3Trape5eh';
+            analytics.SNIPPET_VERSION = '4.15.3';
+            analytics.load('oCCRAYe7kCkq6tKGizTek3o3Trape5eh');
+            analytics.page();
+          }
+      })();
     </script>
     <!-- End Segment Anlaytics -->
-    <meta property="og:image" content="https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL2FSNDlVaEN0TEMzalpiaFcyRWoxLnBuZyJ9:frontify:2DVP2x2JIGGzJ0dJG5kZXLID1m1qZvzaAwCjg6Ybjr0?width=1024">
-    <link rel="icon" type="image/x-icon" href="https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL1FBUWNyeHdYYXVmVVNKd3B0a2ttLnBuZyJ9:frontify:8KHXK2QNyi_NVfWHR1VAhaFsDleic-RnRUzcIXY-Cuc?width=2400">
+    <meta
+      property="og:image"
+      content="https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL2FSNDlVaEN0TEMzalpiaFcyRWoxLnBuZyJ9:frontify:2DVP2x2JIGGzJ0dJG5kZXLID1m1qZvzaAwCjg6Ybjr0?width=1024"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL1FBUWNyeHdYYXVmVVNKd3B0a2ttLnBuZyJ9:frontify:8KHXK2QNyi_NVfWHR1VAhaFsDleic-RnRUzcIXY-Cuc?width=2400"
+    />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
-    <link href="https://cdn.jsdelivr.net/gh/mfg-parts/mfgParts-styling@main/assets/css/bootstrap.min.css" rel="stylesheet" >
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    {%- auth0:head -%}
-    {% if transaction.params.ext-colorTheme == "green" %}
-      {% assign accentColorClass = "primary" %}
-      {% assign headerKeyText = "Design" %}
-      {% assign subtitleText = "Make conversations with current manufacturing partners, and new ones, easier." %}
-    {% else %}
-      {% assign accentColorClass = "secondary" %}
-      {% assign headerKeyText = "Make" %}
-      {% assign subtitleText = "Make conversations with current customers, and new ones, easier." %}
-    {% endif %}
+    <link
+      href="https://cdn.jsdelivr.net/gh/mfg-parts/mfgParts-styling@main/assets/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    {%- auth0:head -%} {% if transaction.params.ext-colorTheme == "green" %} {%
+    assign accentColorClass = "primary" %} {% assign headerKeyText = "Design" %}
+    {% assign subtitleText = "Make conversations with current manufacturing
+    partners, and new ones, easier." %} {% else %} {% assign accentColorClass =
+    "secondary" %} {% assign headerKeyText = "Make" %} {% assign subtitleText =
+    "Make conversations with current customers, and new ones, easier." %} {%
+    endif %}
     <style>
-      #auth0Widget > ._widget > ._prompt-box-outer > div button[data-provider="google"], #auth0Widget > ._widget > ._prompt-box-outer > div button[data-provider="linkedin"], #auth0Widget > ._widget > ._prompt-box-outer > div button[data-provider="waad"]{
-        border: 1px solid var(--bs-dark-2);
-      }
-      {% if prompt.name == "signup-id" or prompt.name == "signup-password" %}
         body {
-          background-color: var(--bs-dark);
-        }
-        #prompt-card {
-          background:rgba(255,255,255,0.0);
-        }
-        #prompt-logo-center {
-              display: none;
-        }
-        #bg-mixin {
-          background: radial-gradient(ellipse at 200% 0%, rgba(var(--bs-{{ accentColorClass }}-rgb), 0.25) 15%, var(--bs-dark) 50%);
-          z-index: -1;
-          position: absolute;
-        }
-        :root {
-          --primary-color: var(--bs-{{ accentColorClass }});
-          --primary-color-no-override: var(--primary-color);
-          --link-color-values: rgba(var(--bs-{{ accentColorClass }}-rgb), 0.7);
-          --base-focus-color: var(--bs-{{ accentColorClass }});
-          --border-default-color: var(--bs-{{ accentColorClass }});
-          --button-font-color: var(--bs-light);
-        }
-        #auth0Widget > ._widget > ._prompt-box-outer > div a {
-          color: var(--bs-{{ accentColorClass }});
+          animation: fadeInAnimation ease 3s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
         }
 
-        /* #shape-overlay {
-          background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1165 1364'%3E%3Cdefs%3E%3Cstyle%3E.cls-1,.cls-2,.cls-3%7Bfill:none;%7D.cls-4%7Bopacity:.04;%7D.cls-5%7Bfill:%2397d54a;%7D.cls-2%7Bstroke:%230096d5;%7D.cls-2,.cls-3%7Bstroke-width:10px;%7D.cls-3%7Bstroke:%23ffa165;%7D%3C/style%3E%3C/defs%3E%3Cg id='Polygon_1' class='cls-4'%3E%3Cpath class='cls-1' d='M301,13.15c6.9-11.96,22.19-16.06,34.15-9.16,3.8,2.2,6.96,5.35,9.16,9.16l297.21,514.98c6.9,11.96,2.81,27.25-9.15,34.15-3.8,2.19-8.11,3.35-12.5,3.35H25.45c-13.81,0-25-11.19-25-25,0-4.39,1.15-8.7,3.35-12.5L301,13.15Z'/%3E%3Cpath class='cls-5' d='M322.66,10.64c-5.42,0-10.28,2.8-12.99,7.5L12.46,533.13c-2.71,4.7-2.71,10.3,0,15s7.57,7.5,12.99,7.5H619.86c5.42,0,10.28-2.8,12.99-7.5,2.71-4.7,2.71-10.3,0-15L335.65,18.15c-2.71-4.7-7.57-7.5-12.99-7.5m0-10c8.42,0,16.84,4.17,21.65,12.5l297.21,514.98c9.62,16.67-2.41,37.5-21.65,37.5H25.45c-19.24,0-31.27-20.83-21.65-37.5L301,13.15c4.81-8.34,13.23-12.5,21.65-12.5Z'/%3E%3C/g%3E%3Cg id='Ellipse_7' class='cls-4'%3E%3Cellipse class='cls-1' cx='812.16' cy='499.13' rx='353' ry='351.5'/%3E%3Cellipse class='cls-3' cx='812.16' cy='499.13' rx='348' ry='346.5'/%3E%3C/g%3E%3Cg id='Rectangle_70' class='cls-4'%3E%3Crect class='cls-1' x='256.16' y='767.63' width='596' height='596' rx='42' ry='42'/%3E%3Crect class='cls-2' x='261.16' y='772.63' width='586' height='586' rx='37' ry='37'/%3E%3C/g%3E%3C/svg%3E");
-          background-repeat: no-repeat no-repeat;
-          background-position: -200px 200px;
-          background-size: cover;
-          position: absolute;
-          display: grid;
-          z-index: -1;
-        } */
-  
-  
-        {% if transaction.params.ext-colorTheme == "green" %}
-          :root{
-            --button-font-color: var(--bs-dark);
+      @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
           }
-        {% endif %}
+          100% {
+              opacity: 1;
+          }
+      }
+        #auth0Widget > ._widget > ._prompt-box-outer > div button[data-provider="google"], #auth0Widget > ._widget > ._prompt-box-outer > div button[data-provider="linkedin"], #auth0Widget > ._widget > ._prompt-box-outer > div button[data-provider="waad"]{
+          border: 1px solid var(--bs-dark-2);
+        }
+        {% if prompt.name == "signup-id" or prompt.name == "signup-password" %}
+          body {
+            background-color: var(--bs-dark);
+          }
+          #prompt-card {
+            background:rgba(255,255,255,0.0);
+          }
+          #prompt-logo-center {
+                display: none;
+          }
+          #bg-mixin {
+            background: radial-gradient(ellipse at 200% 0%, rgba(var(--bs-{{ accentColorClass }}-rgb), 0.25) 15%, var(--bs-dark) 50%);
+            z-index: -1;
+            position: absolute;
+          }
+          :root {
+            --primary-color: var(--bs-{{ accentColorClass }});
+            --primary-color-no-override: var(--primary-color);
+            --link-color-values: rgba(var(--bs-{{ accentColorClass }}-rgb), 0.7);
+            --base-focus-color: var(--bs-{{ accentColorClass }});
+            --border-default-color: var(--bs-{{ accentColorClass }});
+            --button-font-color: var(--bs-light);
+          }
+          #auth0Widget > ._widget > ._prompt-box-outer > div a {
+            color: var(--bs-{{ accentColorClass }});
+          }
 
-      {% endif %}
+          /* #shape-overlay {
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1165 1364'%3E%3Cdefs%3E%3Cstyle%3E.cls-1,.cls-2,.cls-3%7Bfill:none;%7D.cls-4%7Bopacity:.04;%7D.cls-5%7Bfill:%2397d54a;%7D.cls-2%7Bstroke:%230096d5;%7D.cls-2,.cls-3%7Bstroke-width:10px;%7D.cls-3%7Bstroke:%23ffa165;%7D%3C/style%3E%3C/defs%3E%3Cg id='Polygon_1' class='cls-4'%3E%3Cpath class='cls-1' d='M301,13.15c6.9-11.96,22.19-16.06,34.15-9.16,3.8,2.2,6.96,5.35,9.16,9.16l297.21,514.98c6.9,11.96,2.81,27.25-9.15,34.15-3.8,2.19-8.11,3.35-12.5,3.35H25.45c-13.81,0-25-11.19-25-25,0-4.39,1.15-8.7,3.35-12.5L301,13.15Z'/%3E%3Cpath class='cls-5' d='M322.66,10.64c-5.42,0-10.28,2.8-12.99,7.5L12.46,533.13c-2.71,4.7-2.71,10.3,0,15s7.57,7.5,12.99,7.5H619.86c5.42,0,10.28-2.8,12.99-7.5,2.71-4.7,2.71-10.3,0-15L335.65,18.15c-2.71-4.7-7.57-7.5-12.99-7.5m0-10c8.42,0,16.84,4.17,21.65,12.5l297.21,514.98c9.62,16.67-2.41,37.5-21.65,37.5H25.45c-19.24,0-31.27-20.83-21.65-37.5L301,13.15c4.81-8.34,13.23-12.5,21.65-12.5Z'/%3E%3C/g%3E%3Cg id='Ellipse_7' class='cls-4'%3E%3Cellipse class='cls-1' cx='812.16' cy='499.13' rx='353' ry='351.5'/%3E%3Cellipse class='cls-3' cx='812.16' cy='499.13' rx='348' ry='346.5'/%3E%3C/g%3E%3Cg id='Rectangle_70' class='cls-4'%3E%3Crect class='cls-1' x='256.16' y='767.63' width='596' height='596' rx='42' ry='42'/%3E%3Crect class='cls-2' x='261.16' y='772.63' width='586' height='586' rx='37' ry='37'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat no-repeat;
+            background-position: -200px 200px;
+            background-size: cover;
+            position: absolute;
+            display: grid;
+            z-index: -1;
+          } */
+
+
+          {% if transaction.params.ext-colorTheme == "green" %}
+            :root{
+              --button-font-color: var(--bs-dark);
+            }
+          {% endif %}
+
+        {% endif %}
     </style>
   </head>
   <body>
     {% if prompt.name == "signup-id" or prompt.name == "signup-password" %}
     <div class="container-fluid w-100 h-100">
-        <div class="row justify-content-center justify-content-lg-between h-100">
-            <div class="col-1 d-none d-lg-block"></div>
-            <div class="col-5 d-none d-lg-block h-100">
-                <div class="d-flex align-items-center w-100 h-100" id="message-wrapper">
-                    <div class="d-flex">
-                        <div id="prompt-card" class="card border-0 ps-0">
-                            <div class="card-body">
-                                <div><img class="my-3" src="https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL1pNWkVGSEVjU21DRUZrZ3Bpa3hKLnN2ZyJ9:frontify:HpFNhUSMjQree4XfQNk65f-59WuJsTR3_oK2inlPB18?width=400" height="100px"></div>
-                                <h1 class="text-{{ accentColorClass }} display-6">{{ headerKeyText }} your free account.</h1>
-                                <span class="fs-5 fw-light text-white-50 d-flex">{{ subtitleText }}</span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="row justify-content-center justify-content-lg-between h-100">
+        <div class="col-1 d-none d-lg-block"></div>
+        <div class="col-5 d-none d-lg-block h-100">
+          <div
+            class="d-flex align-items-center w-100 h-100"
+            id="message-wrapper"
+          >
+            <div class="d-flex">
+              <div id="prompt-card" class="card border-0 ps-0">
+                <div class="card-body">
+                  <div>
+                    <img
+                      class="my-3"
+                      src="https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL1pNWkVGSEVjU21DRUZrZ3Bpa3hKLnN2ZyJ9:frontify:HpFNhUSMjQree4XfQNk65f-59WuJsTR3_oK2inlPB18?width=400"
+                      height="100px"
+                    />
+                  </div>
+                  <h1 class="text-{{ accentColorClass }} display-6">
+                    {{ headerKeyText }} your free account.
+                  </h1>
+                  <span class="fs-5 fw-light text-white-50 d-flex"
+                    >{{ subtitleText }}</span
+                  >
                 </div>
+              </div>
             </div>
-            <div class="col-6 _widget-auto-layout d-flex justify-content-center align-items-center mx-auto h-100" id="auth0Widget">
-              {%- auth0:widget -%}
-            </div>
+          </div>
         </div>
+        <div
+          class="col-6 _widget-auto-layout d-flex justify-content-center align-items-center mx-auto h-100"
+          id="auth0Widget"
+        >
+          {%- auth0:widget -%}
+        </div>
+      </div>
     </div>
     <div id="bg-mixin" class="w-100 h-100 top-0 start-0"></div>
     <!-- <div id="shape-overlay" class="w-100 h-100 top-0 start-0"></div> -->
     {% else %}
-    <div id="auth0Widget" class="container-fluid w-100 h-100 justify-content-center _widget-auto-layout">
+    <div
+      id="auth0Widget"
+      class="container-fluid w-100 h-100 justify-content-center _widget-auto-layout"
+    >
       {%- auth0:widget -%}
     </div>
     {% endif %}
     <script>
-      $( document ).ready(function() {
-          const anchorTag = document.querySelector('a');
-          
-          if (anchorTag.innerHTML.toLowerCase() === 'sign up') {
-              anchorTag.href = "https://www.mfg.parts/sign-up" 
-          }
+      $(document).ready(function () {
+        const anchorTag = document.querySelector('a');
+
+        if (anchorTag.innerHTML.toLowerCase() === 'sign up') {
+          anchorTag.href = 'https://www.mfg.parts/sign-up';
+        }
       });
-    </script> 
+    </script>
   </body>
 </html>
