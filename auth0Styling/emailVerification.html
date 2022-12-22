@@ -27,6 +27,7 @@
       .button {
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
+        font-family: system-ui;
       }
       table,
       td {
@@ -117,7 +118,7 @@
     </style>
   </head>
   <body>
-    <div id="tableCard">
+    <!-- <div id="tableCard">
       <table
         style="
           width: 600px;
@@ -222,8 +223,192 @@
           </td>
         </tr>
       </table>
-    </div>
+      
+    </div> -->
+    <table
+      width="100%"
+      height="100%"
+      style="min-width: 348px"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      lang="en"
+    >
+      <tbody>
+        <tr height="32" style="height: 32px">
+          <td></td>
+        </tr>
+        <tr align="center">
+          <td>
+            <div><div></div></div>
+            <table
+              border="0"
+              cellspacing="0"
+              cellpadding="0"
+              style="padding-bottom: 1rem; max-width: 516px; min-width: 220px"
+            >
+              <tbody>
+                <tr>
+                  <td width="8" style="width: 8px"></td>
+                  <td>
+                    <div
+                      style="
+                        border-style: solid;
+                        border-width: thin;
+                        border-color: #dadce0;
+                        border-radius: 8px;
+                        padding: 40px 20px;
+                        background: white;
+                        box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3),
+                          0 4px 8px 3px rgba(60, 64, 67, 0.15);
+                      "
+                      align="center"
+                    >
+                      <img
+                        src="https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL2JMRW16N0tTTjZYeHRCUUtIZndYLnBuZyJ9:frontify:-dtNqvhHraxpx_lKRrLuVCjhixKCuPfgXs0hj48V27I?width=250"
+                        aria-hidden="true"
+                        style="margin-bottom: 16px; height: 2rem;"
+                        alt="mfg.parts"
+                      />
+                      <div
+                        style="
+                          border-bottom: thin solid #dadce0;
+                          color: rgba(0, 0, 0, 0.87);
+                          line-height: 32px;
+                          padding-bottom: 24px;
+                          text-align: center;
+                          word-break: break-word;
+                        "
+                      >
+                        <div style="font-size: 24px">verify your mfg.parts account</div>
+                        <table align="center" style="margin-top: 8px">
+                          <tbody>
+                            <tr style="line-height: normal">
+                              <td align="right" style="padding-right: 8px">
+                                <img
+                                  width="20"
+                                  height="20"
+                                  style="
+                                    width: 20px;
+                                    height: 20px;
+                                    vertical-align: sub;
+                                    border-radius: 50%;
+                                  "
+                                  src="{{user.picture}}"
+                                />
+                              </td>
+                              <td>
+                                <a
+                                  style="
+                                    font-family: 'Google Sans', Roboto,
+                                      RobotoDraft, Helvetica, Arial, sans-serif;
+                                    color: rgba(0, 0, 0, 0.87);
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                  "
+                                  >{{user.email}}</a
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div
+                        style="
+                          font-size: 16px;
+                          color: rgba(0, 0, 0, 0.87);
+                          line-height: 24px;
+                          padding-top: 1rem;
+                          text-align: center;
+                        "
+                      >
+                      To keep your account secure, we need to verify your email.  <br />
+                    If this was you, please click the link below to verify.
+                        If not, reply to this email and we’ll help you secure your account.
+                        <div style="padding-top: 32px; text-align: center">
+                          <a
+                            href="{{ url }}"
+                            style="
+                              line-height: 16px;
+                              color: #121314;
+                              font-weight: 400;
+                              text-decoration: none;
+                              font-size: 14px;
+                              display: inline-block;
+                              padding: 10px 24px;
+                              background-color: #BDED92;
+                              border-radius: 5px;
+                              min-width: 90px;
+                            "
+                            target="_blank"
+                            ><span class="il">Check</span> activity</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          padding-top: 20px;
+                          font-size: 12px;
+                          line-height: 16px;
+                          color: #5f6368;
+                          letter-spacing: 0.3px;
+                          text-align: center;
+                        "
+                      >
+                        You can also see security activity at<br /><a
+                          style="
+                            color: rgba(0, 0, 0, 0.87);
+                            text-decoration: inherit;
+                          "
+                          >https://myaccount.google.com/<wbr />notifications</a
+                        >
+                      </div>
+                    </div>
+                    <div style="text-align: left">
+                      <div
+                        style="
+                          font-family: Roboto-Regular, Helvetica, Arial,
+                            sans-serif;
+                          color: rgba(0, 0, 0, 0.54);
+                          font-size: 11px;
+                          line-height: 18px;
+                          padding-top: 12px;
+                          text-align: center;
+                        "
+                      >
+                        <div>
+                          You received this email to notify you of important changes to your mfg.parts account.
+                        </div>
+                        <div style="direction: ltr">
+                          © 2022 mfg.parts, Inc.,
+                          <a
+                            class="m_-5922730882328182211afal"
+                            style="
+                              font-family: Roboto-Regular, Helvetica, Arial,
+                                sans-serif;
+                              color: rgba(0, 0, 0, 0.54);
+                              font-size: 11px;
+                              line-height: 18px;
+                              padding-top: 12px;
+                              text-align: center;
+                            "
+                            >4796 Lago Vista Cir, San Jose, CA 95129,
+                            USA</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="8" style="width: 8px"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr height="32" style="height: 32px">
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
-
-
